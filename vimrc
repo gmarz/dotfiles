@@ -8,6 +8,8 @@ set t_Co=256
 
 colorscheme zenburn
 
-" Map tab previous/next to F7/F8
+autocmd vimenter * if !argc() | NERDTree | endif
+
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
+map <C-n> :NERDTreeToggle<CR>
